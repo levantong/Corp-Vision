@@ -58,8 +58,11 @@ Anh em làm luôn reponsive phần của mình luôn nhe.
 Web mẫu thiết kế reponsive theo kiểu Desktop First với 4 điểm breakpoint như bên dưới, anh em để ý chỗ này để thống nhất nhe.
 
 @media only screen and (max-width: 1440px) {...}
+
 @media only screen and (max-width: 1199px) {...}
+
 @media only screen and (max-width: 991px) {...}
+
 @media only screen and (max-width: 480px) {...}
 
 => Chú ý phần thay đổi về padding và font-size nha, phần này quan trọng
