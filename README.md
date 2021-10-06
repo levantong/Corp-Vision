@@ -94,7 +94,7 @@ _Hạn chót 15/10_
     --heading-color: #3f3a64;
     
 ###### Bố cục:
-Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là .container có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
+Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là ~~.container~~ => anh em sửa thành .cover nha để tránh trùng với class của Bootstrap có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
 
 => Các thuộc tính chung sẽ được khai báo trong đầu file style.css đính kèm, anh em clone hết về rồi làm nha.
     
