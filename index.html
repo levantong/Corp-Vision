@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corp Vision - Vision to your Future</title>
-    <link rel="icon" href="./assets/img/logo-w3.png">
+    <link rel="icon" href="./assets/img/logo-400.png">
     <!-- add font Jost-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <!-- back top top css -->
+    <link rel="stylesheet" href="./assets/css/style.scss">
+    <link rel="stylesheet" href="./assets/css/back-to-top-style.css">
     <!-- CSS chính, tất cả link CSS khác để trên này -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -30,14 +34,263 @@
     <section class="progress"></section>
 
     <!-- PHẦN TÒNG LÀM -->
-    <section class="testimonical"></section>
-    <section class="blogs"></section>
-    <section class="subscribe">
+        <!-- PHẦN Testimonical -->
+    <section class="testimonical">
+        <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+            <h5 class="sub-title">
+                HAPPY CLIENTS FEEDBACK
+            </h5>
+            <h3 class="main-title">
+                Reviews and Testimonials
+            </h3>
+            
+            <div class="slider">
+                <div id="carouselTestimonials" class="carousel slide" data-interval="5000" data-touch="true" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-img">
+                                    <img src="./assets/img/team1.jpg" alt="reviewer-img">
+                                </div>
+                                <div class="reviewer-content">
+                                    <h3>John wilson</h3>
+                                    <p>Studient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-img">
+                                    <img src="./assets/img/team2.jpg" alt="reviewer-img">
+                                </div>
+                                <div class="reviewer-content">
+                                    <h3>Julia sakura</h3>
+                                    <p>Studient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-img">
+                                    <img src="./assets/img/team3.jpg" alt="reviewer-img">
+                                </div>
+                                <div class="reviewer-content">
+                                    <h3>Roy Linderson</h3>
+                                    <p>Studient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</p>
+                            <div class="reviewer">
+                                <div class="reviewer-img">
+                                    <img src="./assets/img/team4.jpg" alt="reviewer-img">
+                                </div>
+                                <div class="reviewer-content">
+                                    <h3>Smith Johnson</h3>
+                                    <p>Studient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+                        <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+                        <li data-target="#carouselTestimonials" data-slide-to="3"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
 
+        <!-- PHẦN Blogs -->
+    <section class="blogs">
+        <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+            <h5 class="sub-title">
+                LATEST NEWS
+            </h5>
+            <h3 class="main-title">
+                Our insight and articles
+            </h3>
+
+            <!-- 3 blog dùng card-deck để cao bằng nhau -->
+            <div class="row equal">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="./assets/img/blog1.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Startup Business</h5>
+                            <a href="#">Business opportunity in developing a reliable electric motor.</a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#"><img src="./assets/img/team1.jpg" alt="card-footer-img"></a>
+                            <p class="footerGrow">by <a href="#">Jessica</a></p>
+                            <p>20 March, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="./assets/img/blog2.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Strategy</h5>
+                            <a href="#">The fledgling company builds its business around AC motors.</a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#"><img src="./assets/img/team2.jpg" alt="card-footer-img"></a>
+                            <p class="footerGrow">by <a href="#">Elizabeth</a></p>
+                            <p>12 Feb, 2021</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="./assets/img/blog3.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <a href="#">How to start a profitable home-based business within mins?</a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#"><img src="./assets/img/team3.jpg" alt="card-footer-img"></a>
+                            <p class="footerGrow">by <a href="#">Charlotte</a></p>
+                            <p>09 Nov, 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN SUBSCRIBE  -->
+    <section class="subscribe">
+        <div class="container">
+            <h3 class="main-title">
+                Let’s find out how to work together
+            </h3>
+            <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet.<br> Lorem ipsum dolor
+                sit
+                amet elit.</p>
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="fa fa-paper-plane"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg">
+                <button class="btn btn-style btn-primary">Subscibe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* PHẦN FOOTER */ -->
+    <footer class="py-5">
+        <div class="container py-md-4">
+            <div class="row">
+                <div class="footer-item1 col-lg-4 col-md-6">
+                    <a href="#" class="footer-logo mb-4">
+                        <div class="logo-icon"><i class="fa fa-align-right"></i></div>
+                        <div class="logo-text">
+                            <h3>Corp Vision</h3>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum
+                        dolor sit amet Semper at elit team advisors.</p>
+                    <div class="item1-link mt-md-4 mt-3">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact col-lg-4 col-md-6 pr-lg-5 mt-md-0 mt-5">
+                    <h2>Contact Info</h2>
+                    <ul>
+                        <li>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</li>
+                        <li>Phone Number : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></li>
+                        <li>Email : <a href="mailto:info@example.com">info@example.com</a></li>
+                        <li>Support :<a href="mailto:iinfo@support.com">info@support.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="">UI/UX Design</a></li>
+                        <li><a href="">Creative agency</a></li>
+                        <li><a href="">Positive thinking</a></li>
+                        <li><a href="">Marketing service</a></li>
+                        <li><a href="">Creative agency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-company col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="">About company</a></li>
+                        <li><a href="">Latest Blog posts</a></li>
+                        <li><a href="">Our Gallery</a></li>
+                        <li><a href="">Vision to future</a></li>
+                        <li><a href="">Get in touch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Phần Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <p>© 2021 Corp Vision. All rights reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+        </div>
+    </div>
+    <!-- Nút Back to Top -->
+    <a href="#" id="toTop" class="to-top-btn text-replace js-cd-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+          </svg>
+    </a>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("toTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+    </script>
     <!-- Bootstrap JavaScript bundle -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 </body>
 </html>
