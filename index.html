@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,25 @@
     <!-- add font Jost-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+
+
+    <!-- Slick Library -->
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- WOW JS -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+   
+
+
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,21 +37,206 @@
     <!-- back top top css -->
     <link rel="stylesheet" href="./assets/css/style.scss">
     <link rel="stylesheet" href="./assets/css/back-to-top-style.css">
+
     <!-- CSS chính, tất cả link CSS khác để trên này -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+
 </head>
+
 <body>
     <!-- PHẦN DUY LÀM -->
-    <header></header>
-    <section class="banner"></section>
-    <section class="aboutUs"></section>
+    <!-- HEADER -->
+    <header class="corpHeader fixed-top">
+        <div class="container">
+            <nav class="corpNavbar navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><i class="fa fa-align-right"></i>Corp Vision
+                    <span class="logo">Vision to your Future</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="corpNavbar__list navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item dropdown" id="dropdownPageButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#">PAGES</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownPageButton">
+                                <a class="dropdown-item" href="#">BLOG POSTS</a>
+                                <a class="dropdown-item" href="#">404 PAGE</a>
+                                <a class="dropdown-item" href="#">LANDING PAGE</a>
+                                <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!--Search -->
+                    <div class="corpBtn-Search">
+                        <div class="btn-container">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <!-- Fullscreen search form -->
+                        <i class="fa fa-times btn-close"></i>
+                        <form action="https://wp.w3layouts.com/corpvision/" method="GET" class="search-input">
+                            <input class="input-search" name="s" placeholder="Start Typing" type="text">
+                        </form>
+                    </div>
+                    <!--//Search -->
+
+                    <div class="corpMode-container">
+                        <!-- style="background-color: black; -->
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="corpBanner">
+        <div class="banner-slider">
+            <div class="slide-item bg1">
+                <div class="item-content container">
+                    <h1 data-animation="flipInX" data-delay="0.8s">We will solve your issues our vision to your future
+                    </h1>
+                    <p data-animation="fadeInDown">
+                        Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nisi ut
+                        ea.
+                    </p>
+                    <div data-animation="fadeInUp" data-delay="1s" class="btn-container">
+                        <a href="#" class="btn btn-style btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide-item bg2">
+                <div class="item-content container">
+                    <h1 data-animation="fadeInDown" data-delay="0.8s">Embracing success do our best, need best advice
+                    </h1>
+                    <p data-animation="fadeInDown">
+                        Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nisi ut
+                        ea.
+                    </p>
+                    <div class="btn-container" data-animation="fadeInDown" data-delay="1s">
+                        <a href="#" class="btn btn-style btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide-item bg3">
+                <div class="item-content container">
+                    <h1 data-animation="fadeInUp" data-delay="0.8s">Digital transformation driven by technology</h1>
+                    <p data-animation="fadeInUp">
+                        Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nisi ut
+                        ea.
+                    </p>
+                    <div class="btn-container" data-animation="fadeInDown" data-delay="1s">
+                        <a href="#" class="btn btn-style btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide-item bg4">
+                <div class="item-content container">
+                    <h1 data-animation="flipInX" data-delay="0.8s">For those who believe in leaving a mark</h1>
+                    <p data-animation="fadeInDown">
+                        Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nisi ut
+                        ea.
+                    </p>
+                    <div class="btn-container" data-animation="fadeInUp" data-delay="1s">
+                        <a href="#" class="btn btn-style btn-primary">Contact Now</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="banner-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                    <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                        values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                    </animate>
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- ABOUT US -->
+    <section class="corpAboutUs">
+        <div class="corpAboutUs-content container row">
+            <div class="content-left col-6">
+                <h6 class="small-title">About Us</h6>
+                <h3 class="big-title">We make the best strategies for you, Enhancing your success</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+                <ul>
+                    <li><a href="#">
+                            <i class="fa fa-check-circle"></i>
+                            UI/UX Design and Development
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fa fa-check-circle"></i>
+                            Branding Design and Identity
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fa fa-check-circle"></i>
+                            Mobile App Design and Development
+                        </a></li>
+                </ul>
+            </div>
+            <div class="content-right col-6">
+                <div class="image-container row">
+                    <div class="image-left col-6">
+                        <!-- style="background-color: blue;" -->
+                        <img src="./img/a.jpg" alt="img-a">
+                    </div>
+                    <div class="image-right col-6">
+                        <!-- style="background-color: green;" -->
+                        <img src="./img/c1.jpg" alt="img-c1">
+                        <img src="./img//c4.jpg" alt="img-c4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- PHẦN VỸ TÂN LÀM -->
     <section class="features"></section>
     <section class="services"></section>
     <section class="galery"></section>
     <section class="companyLogo"></section>
-    <section class="progress"></section>
+    <!-- <section class="progress"></section> -->
 
     <!-- PHẦN TÒNG LÀM -->
         <!-- PHẦN Testimonical -->
@@ -194,6 +399,43 @@
         </div>
     </section>
 
+
+
+
+
+    <!-- Slick Library -->
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- MENU ANIMATION -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("header.corpHeader").addClass("header-fixed");
+            } else {
+                $("header.corpHeader").removeClass("header-fixed");
+            }
+        });
+    </script>
+
+    <!-- Search -->
+    <script>
+        $('.btn-container').click(function () {
+            $('body').addClass('search-active');
+            // $('.input-search').focus();
+        });
+
+        $('.btn-close').click(function () {
+            $('body').removeClass('search-active');
+        });
+    </script>
+
+    <!-- THEME CHANGE -->
+    <script src="./assets/js/theme-change.js"></script>
+
+
     <!-- /* PHẦN FOOTER */ -->
     <footer class="py-5">
         <div class="container py-md-4">
@@ -293,5 +535,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
 </body>
+
 </html>
