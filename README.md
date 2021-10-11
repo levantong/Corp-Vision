@@ -53,6 +53,19 @@ _Hạn chót hoàn thành 13/10_
 
 Anh em làm luôn reponsive phần của mình luôn nhe. 
 
+**Update 06/10 - PHẦN REPONSIVE:
+
+Web mẫu thiết kế reponsive theo kiểu Desktop First với 4 điểm breakpoint như bên dưới, anh em để ý chỗ này để thống nhất nhe.
+
+@media only screen and (max-width: 1440px) {...}
+
+@media only screen and (max-width: 1199px) {...}
+
+@media only screen and (max-width: 991px) {...}
+
+@media only screen and (max-width: 480px) {...}
+
+=> Chú ý phần thay đổi về padding và font-size nha, phần này quan trọng
 **B4:**
 _Hạn chót 13/10_
 
@@ -81,7 +94,7 @@ _Hạn chót 15/10_
     --heading-color: #3f3a64;
     
 ###### Bố cục:
-Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là .container có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
+Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là ~~.container~~ => anh em sửa thành .cover nha để tránh trùng với class của Bootstrap có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
 
 => Các thuộc tính chung sẽ được khai báo trong đầu file style.css đính kèm, anh em clone hết về rồi làm nha.
     
