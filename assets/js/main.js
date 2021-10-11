@@ -19,7 +19,7 @@ $bannerSlider.slick({
     dots: false,
     swipe: true,
     adaptiveHeight: true,
-    // autoplay: true,
+    // autoplay: true, //Tắt chức năng autoplay của banner
     // autoplaySpeed: 4000,
     responsive: [
         {
@@ -27,7 +27,7 @@ $bannerSlider.slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: false, //Tắt chức năng autoplay của banner
                 autoplaySpeed: 4000,
                 swipe: true,
             }
