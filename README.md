@@ -5,6 +5,12 @@ https://demo.w3layouts.com/demos_new/template_demo/01-04-2021/corpvision-liberty
 
 Mọi người đăng ký tài khoản Trello, Join vào bảng này: https://trello.com/invite/b/HYLd3zo6/11909b3dcc1eee70834f08f7635a0889/bootcam-20-b%C3%A0i-t%E1%BA%ADp-nh%C3%B3m-7, kiểm tra và hoàn thành các task trên Trello theo đúng tiến độ dự án nha.
 
+**Up date: 12/10: Thêm trang báo test lỗi, nhấn đây xem nha **👉 [about page](about.md)
+
+**Up date: 12/10: Bảng phân công công việc sẽ nộp và tiến trình các progress**
+
+![progress.png](https://2.pik.vn/20217fd862bd-f19b-495f-b0c8-a22b12aba734.png)
+
 **B1:**
 
 _hạn chót 02/10_
@@ -53,6 +59,19 @@ _Hạn chót hoàn thành 13/10_
 
 Anh em làm luôn reponsive phần của mình luôn nhe. 
 
+**Update 06/10 - PHẦN REPONSIVE:
+
+Web mẫu thiết kế reponsive theo kiểu Desktop First với 4 điểm breakpoint như bên dưới, anh em để ý chỗ này để thống nhất nhe.
+
+@media only screen and (max-width: 1440px) {...}
+
+@media only screen and (max-width: 1199px) {...}
+
+@media only screen and (max-width: 991px) {...}
+
+@media only screen and (max-width: 480px) {...}
+
+=> Chú ý phần thay đổi về padding và font-size nha, phần này quan trọng
 **B4:**
 _Hạn chót 13/10_
 
@@ -81,7 +100,7 @@ _Hạn chót 15/10_
     --heading-color: #3f3a64;
     
 ###### Bố cục:
-Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là .container có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
+Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là ~~.container~~ => anh em sửa thành .cover nha để tránh trùng với class của Bootstrap có {max-width: 960px; margin: 0 auto; padding top+bottom: 48px}
 
 => Các thuộc tính chung sẽ được khai báo trong đầu file style.css đính kèm, anh em clone hết về rồi làm nha.
     
