@@ -5,6 +5,8 @@ https://demo.w3layouts.com/demos_new/template_demo/01-04-2021/corpvision-liberty
 
 Mọi người đăng ký tài khoản Trello, Join vào bảng này: https://trello.com/invite/b/HYLd3zo6/11909b3dcc1eee70834f08f7635a0889/bootcam-20-b%C3%A0i-t%E1%BA%ADp-nh%C3%B3m-7, kiểm tra và hoàn thành các task trên Trello theo đúng tiến độ dự án nha.
 
+**Up date: 12/10: Thêm trang báo test lỗi, nhấn đây xem nha **👉 [about page](about.md)
+
 **Up date: 12/10: Bảng phân công công việc sẽ nộp và tiến trình các progress**
 
 ![progress.png](https://2.pik.vn/20217fd862bd-f19b-495f-b0c8-a22b12aba734.png)
