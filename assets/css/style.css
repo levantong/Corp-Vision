@@ -774,7 +774,7 @@ nav ul li a:before {
 /* PHẦN Testimonical*/
 .testimonical {
     text-align: center;
-    background: #f8f9fa;
+    background: var(--bg-lightgrey);
 }
 .carousel-item {
     padding: 40px 30px;
@@ -840,7 +840,7 @@ nav ul li a:before {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #404040;
+    background-color: var(--secondary-color);;
     margin: 1px 6px;
     transition: 0.3s;
 }
@@ -865,6 +865,8 @@ nav ul li a:before {
     text-align: left;
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
     height: 100%;
+    background: var(--bg-color);
+
 }
 .card > a {
     overflow: hidden;
