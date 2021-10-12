@@ -776,12 +776,12 @@ nav ul li a:before {
     text-align: center;
     background: var(--bg-lightgrey);
 }
-.carousel-item {
+.carousel-content {
     padding: 40px 30px;
     margin: 0 135px;
     width: initial;
 }
-.carousel-item > p {
+.carousel-content > p {
     margin-bottom: 24px;
     font-size: 18px;
     line-height: 28px;
