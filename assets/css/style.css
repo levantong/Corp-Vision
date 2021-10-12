@@ -64,7 +64,11 @@ h1, h2, h3, h4, h5, h6{
 /* PHẦN Testimonical*/
 .testimonical{
     text-align: center;
+<<<<<<< Updated upstream
     background: #f8f9fa;;
+=======
+    background: var(--bg-lightgrey);
+>>>>>>> Stashed changes
 }
 .carousel-item{
     padding: 40px 30px;
@@ -129,7 +133,7 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #404040;
+    background-color: var(--secondary-color);;
     margin: 1px 6px;
     transition: 0.3s;
 }
@@ -154,6 +158,8 @@ h1, h2, h3, h4, h5, h6{
     text-align: left;
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
     height: 100%;
+    background: var(--bg-color);
+
 }
 .card>a{
     overflow: hidden;
