@@ -1131,7 +1131,7 @@ footer li a:hover {
         font-size: 32px !important;
         line-height: 40px;
     }
-    .carousel-item {
+    .carousel-content {
         padding: 30px 20px;
         margin: 0 15px;
     }
@@ -1147,7 +1147,7 @@ footer li a:hover {
         font-size: 30px !important;
         line-height: 38px;
     }
-    .carousel-item {
+    .carousel-content {
         padding: 30px 20px;
         margin: 0 0px;
     }
@@ -1163,21 +1163,12 @@ footer li a:hover {
         font-size: 24px !important;
         line-height: 24px;
     }
-    .carousel-item {
+    .carousel-content {
         padding: 20px 0px;
-    }
-    .carousel-item {
-        padding: 30px 20px;
         margin: 0 0px;
     }
     .input-group {
         padding: 48px 0px;
     }
-    /* .carousel-item>p,.reviewer h3,.reviewer p{
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 10px;
-} */
     /* hết Phần landscape phones */
 }
