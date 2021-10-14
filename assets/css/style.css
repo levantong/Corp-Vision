@@ -42,7 +42,11 @@ html {
     --layer: rgba(29, 42, 55, 0.8);
 }
 
-body {
+body,
+html {
+    font-family: "Jost", sans-serif;
+    background: var(--bg-color);
+    color: var(--font-color);
     font-family: "Jost", sans-serif;
 }
 
@@ -95,11 +99,6 @@ a:hover {
     text-decoration: none;
 }
 
-:root {
-    --border-radius: 8px;
-    --layer: rgba(29, 42, 55, 0.7);
-}
-
 /* HEADER */
 header .container,
 .corpBanner .container,
@@ -147,6 +146,10 @@ header {
     align-items: center;
     z-index: 10;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+header.active {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 header.header-fixed {
@@ -244,9 +247,19 @@ header .corpNavbar__list.navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
 }
 
+header .corpNavbar__list.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
 header.header-fixed .corpNavbar__list.navbar-nav .nav-item .nav-link {
     color: var(--heading-color);
     opacity: 0.7;
+}
+
+header.header-fixed .corpNavbar__list.navbar-nav .nav-item .nav-link:hover {
+    color: var(--heading-color);
+    opacity: 1;
 }
 
 header .corpNavbar__list.navbar-nav .nav-item.active .nav-link {
@@ -536,10 +549,6 @@ header .navbar-dark .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-header.active {
-    background: rgba(0, 0, 0, 0.7);
-}
-
 .noscroll {
     min-height: 100vh;
     overflow: hidden;
@@ -633,8 +642,8 @@ header.active {
     font-size: 16px;
     text-align: center;
     line-height: 46px;
-    /* color: var(--heading-color); */
-    color: #3f3a64;
+    color: var(--heading-color);
+    opacity: 1;
 }
 
 .corpBanner .slick-prev.slick-arrow {
@@ -916,9 +925,21 @@ header.active {
         padding: 20px 0 0px;
     }
 
+    header .navbar-collapse {
+        max-height: calc(100vh - 80px);
+        overflow-y: scroll;
+    }
+
     header .corpNavbar__list.navbar-nav .nav-item .nav-link {
         display: block;
         padding: 6px 0;
+        text-align: center;
+    }
+
+    header .corpNavbar__list.navbar-nav .dropdown .dropdown-menu {
+        position: static;
+        float: none;
+        transform: translateX(0px);
         text-align: center;
     }
 
