@@ -612,7 +612,9 @@ header .navbar-dark .navbar-toggler {
 .corpBanner .slick-next.slick-arrow {
     position: absolute;
     right: 25px;
-    bottom: 50px;
+    /*! Điều chỉnh vị trí nút xuống 1 nửa để giống web mẫu*/
+    /* bottom: 50px;  */
+    bottom: 25px;
     font-size: 0;
     background: var(--bg-color);
     border: 0;
