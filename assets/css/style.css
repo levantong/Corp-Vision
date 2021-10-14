@@ -42,7 +42,11 @@ html {
     --layer: rgba(29, 42, 55, 0.8);
 }
 
-body {
+body,
+html {
+    font-family: "Jost", sans-serif;
+    background: var(--bg-color);
+    color: var(--font-color);
     font-family: "Jost", sans-serif;
 }
 
@@ -81,7 +85,6 @@ h6 {
     color: #7e7d7d;
 }
 
-
 /* Author: Duy */
 /* Desktop */
 body a,
@@ -96,19 +99,43 @@ a:hover {
     text-decoration: none;
 }
 
-:root {
-    --border-radius: 8px;
-    --layer: rgba(29, 42, 55, 0.7);
-}
-
 /* HEADER */
 header .container,
 .corpBanner .container,
 .corpAboutUs .container {
     width: 100%;
-    max-width: 1200px; /*Cho màn hình trên 1200px*/
-    padding: 0 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 576px) {
+    header .container,
+    .corpBanner .container,
+    .corpAboutUs .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    header .container,
+    .corpBanner .container,
+    .corpAboutUs .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    header .container,
+    .corpBanner .container,
+    .corpAboutUs .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    header .container,
+    .corpBanner .container,
+    .corpAboutUs .container {
+        max-width: 1140px;
+    }
 }
 
 header {
@@ -119,6 +146,10 @@ header {
     align-items: center;
     z-index: 10;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+header.active {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 header.header-fixed {
@@ -134,6 +165,15 @@ header.fixed-top {
     top: 0;
     right: 0;
     left: 0;
+}
+
+header .navbar {
+    padding: 0;
+}
+
+header .navbar h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
 }
 
 header .navbar .navbar-brand {
@@ -154,6 +194,7 @@ header .navbar .navbar-brand i {
     color: var(--primary-color);
     margin-right: 5px;
     vertical-align: bottom;
+    width: 30px;
 }
 
 header .navbar .navbar-brand .logo {
@@ -206,9 +247,19 @@ header .corpNavbar__list.navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
 }
 
+header .corpNavbar__list.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
 header.header-fixed .corpNavbar__list.navbar-nav .nav-item .nav-link {
     color: var(--heading-color);
     opacity: 0.7;
+}
+
+header.header-fixed .corpNavbar__list.navbar-nav .nav-item .nav-link:hover {
+    color: var(--heading-color);
+    opacity: 1;
 }
 
 header .corpNavbar__list.navbar-nav .nav-item.active .nav-link {
@@ -317,8 +368,7 @@ body.search-active .corpBtn-Search .btn-container i {
 }
 
 header .corpBtn-Search .btn-close {
-    /* Thêm tính năng display:none cho nút close */
-    display: none;
+    visibility: hidden;
     position: absolute;
     color: #fff;
     cursor: pointer;
@@ -328,6 +378,7 @@ header .corpBtn-Search .btn-close {
 }
 
 body.search-active .corpBtn-Search .btn-close {
+    visibility: visible;
     opacity: 1;
     transform: rotate(-90deg);
     display: block;
@@ -476,6 +527,33 @@ nav ul li a:after,
 nav ul li a:before {
     transition: all 0.5s;
 }
+
+header button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
+header button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+
+header button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+header button.navbar-toggler .icon-close {
+    display: block;
+}
+
+header .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.noscroll {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 /* END OF HEADER */
 
 /* BANNER */
@@ -487,23 +565,27 @@ nav ul li a:before {
 }
 .corpBanner .banner-slider {
     position: relative;
-    height: 800px;
+    height: 100%;
     width: 100%;
+}
+
+.corpBanner .slide-item {
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    padding: 3em 0;
 }
 
 .corpBanner .bg1,
 .corpBanner .bg2,
 .corpBanner .bg3,
 .corpBanner .bg4 {
-    height: 800px;
-    width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: top !important;
-    padding: 3em 0;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: center;
 }
 
 .corpBanner .bg1 {
@@ -560,8 +642,8 @@ nav ul li a:before {
     font-size: 16px;
     text-align: center;
     line-height: 46px;
-    /* color: var(--heading-color); */
-    color: #3f3a64;
+    color: var(--heading-color);
+    opacity: 1;
 }
 
 .corpBanner .slick-prev.slick-arrow {
@@ -586,7 +668,6 @@ nav ul li a:before {
 .corpBanner .slide-item .item-content h1 {
     font-size: 65px;
     line-height: 1.1;
-    margin-bottom: 18px;
     color: rgb(255, 255, 255);
     max-width: 800px;
     font-weight: 600;
@@ -599,6 +680,7 @@ nav ul li a:before {
     color: #fff;
     letter-spacing: 0.01em;
     opacity: 0.9;
+    margin-top: 1.5rem !important;
 }
 
 .corpBanner .item-content .btn-container {
@@ -663,11 +745,6 @@ nav ul li a:before {
     padding-bottom: 3rem;
 }
 
-.corpAboutUs-content {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 .corpAboutUs li {
     list-style-type: none;
 }
@@ -689,7 +766,7 @@ nav ul li a:before {
 }
 
 .corpAboutUs .content-left p {
-    margin-top: 1.5rem !important;
+    margin-top: 1rem !important;
     font-size: 17px;
     line-height: 27px;
     color: var(--font-color);
@@ -771,6 +848,141 @@ nav ul li a:before {
         transform: perspective(400px);
     }
 }
+/* Responsive phần Header, Banner, About Us */
+/* Author: Duy */
+@media only screen and (max-width: 1440px) {
+    header .corpNavbar__list.navbar-nav .nav-item {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header .navbar .navbar-brand {
+        font-size: 32px;
+    }
+
+    header .navbar .navbar-brand i {
+        font-size: 32px;
+        width: 32px;
+    }
+
+    .corpBanner .slide-item .item-content h1 {
+        font-size: 55px;
+    }
+
+    .corpAboutUs .content-left .big-title {
+        font-size: 32px !important;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* HEADER */
+    header.corpHeader {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    header .navbar-toggler-icon.fa {
+        font-size: 20px;
+        color: #fff;
+        line-height: 34px;
+        padding: 0;
+        width: 34px;
+        height: 34px;
+        background: var(--primary-color);
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    header .navbar-toggler {
+        border: 0 none;
+        font-size: 24px;
+        padding: 0rem 0rem !important;
+    }
+
+    header .corpBtn-Search {
+        position: absolute;
+        right: 65px;
+        top: 10px;
+    }
+
+    header .corpMode-container {
+        position: absolute;
+        right: 44px;
+        top: 18px;
+    }
+
+    header .corpBtn-Search .btn-container {
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    header .corpNavbar__list.navbar-nav {
+        padding: 20px 0 0px;
+    }
+
+    header .navbar-collapse {
+        max-height: calc(100vh - 80px);
+        overflow-y: scroll;
+    }
+
+    header .corpNavbar__list.navbar-nav .nav-item .nav-link {
+        display: block;
+        padding: 6px 0;
+        text-align: center;
+    }
+
+    header .corpNavbar__list.navbar-nav .dropdown .dropdown-menu {
+        position: static;
+        float: none;
+        transform: translateX(0px);
+        text-align: center;
+    }
+
+    /* BANNER */
+    .corpBanner .slide-item .item-content h1 {
+        font-size: 50px;
+    }
+
+    .corpBanner .slide-item {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* BANNER */
+    .corpBanner .slide-item .item-content h1 {
+        font-size: 45px;
+    }
+
+    .corpBanner .slide-item .item-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .corpBanner .slide-item {
+        min-height: 650px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .corpBanner .slide-item .item-content h1 {
+        font-size: 40px;
+    }
+    .corpBanner .slide-item {
+        min-height: 600px;
+        padding-bottom: 0px;
+    }
+    .corpAboutUs .content-left .big-title {
+        font-size: 30px !important;
+        line-height: 38px;
+    }
+}
 
 /* PHẦN Testimonical*/
 .testimonical {
@@ -841,7 +1053,7 @@ nav ul li a:before {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: var(--secondary-color);;
+    background-color: var(--secondary-color);
     margin: 1px 6px;
     transition: 0.3s;
 }
@@ -867,7 +1079,6 @@ nav ul li a:before {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
     height: 100%;
     background: var(--bg-color);
-
 }
 .card > a {
     overflow: hidden;
@@ -1173,4 +1384,3 @@ footer li a:hover {
     }
     /* hết Phần landscape phones */
 }
-
