@@ -997,6 +997,76 @@ header .navbar-dark .navbar-toggler {
     }
 }
 
+    /* REPONSIVE nút tìm kiếm full màn hình */
+@media only screen and (max-width: 991px) {
+    .corpBtn-Search {
+        position: absolute;
+        right: 65px;
+        top: 10px;
+    }
+    .btn-container .btn-material {
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .search-input input {
+        position: absolute;
+        right: -50%;
+        width: initial;
+    }
+    .corpBtn-Search .icon-close {
+        right: -50px;
+    }
+}
+    
+@media only screen and (max-width: 736px) {
+    .corpBtn-Search .icon-close {
+        right: -110px;
+        z-index: 9;
+    }
+    .search-input input {
+        position: absolute;
+        right: -80px;
+    }
+}
+    
+@media only screen and (max-width: 568px) {
+    .search-input input {
+        font-size: 46px;
+    }
+    .corpBtn-Search .icon-close {
+        right: -60px;
+        z-index: 9;
+        font-size: 45px;
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+    .corpBtn-Search {
+        top: 6px;
+    }
+    .search-input input {
+        font-size: 40px;
+    }
+}
+    
+@media only screen and (max-width: 415px) {
+    .search-input input {
+        right: -125px;
+    }
+}
+    
+@media only screen and (max-width: 375px) {
+    .search-input input {
+        font-size: 35px;
+    }
+    .corpBtn-Search .icon-close {
+        font-size: 35px;
+    }
+}
+
 
 /* ================  CSS của Tân ====================*/
 
