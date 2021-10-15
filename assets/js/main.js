@@ -19,8 +19,6 @@ $bannerSlider.slick({
     dots: false,
     swipe: true,
     adaptiveHeight: true,
-    // autoplay: true, //Tắt chức năng autoplay của banner
-    // autoplaySpeed: 4000,
     responsive: [
         {
             breakpoint: 767,
