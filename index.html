@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corp Vision - Vision to your Future</title>
-    <link rel="icon" href="./img/logo-400.png">
+    <link rel="icon" href="./assets/img/logo-400.png">
     <!-- add font Jost-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Slick Library -->
@@ -40,9 +40,10 @@
     <link rel="stylesheet" href="./assets/css/back-to-top-style.css">
 
 
-    <!-- fancybox  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-
+    <!-- lightbox để làm phần OUR GALLERY  -->
+    <link rel="stylesheet" href="./assets/css/lightbox.css"/>
+    <!-- Link CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/style1.css"> -->
     <!-- CSS chính, tất cả link CSS khác để trên này -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -229,21 +230,12 @@
                     <div class="image-container row">
                         <div class="image-left col-6">
                             <!-- style="background-color: blue;" -->
-
                             <img src="./assets/img/a.jpg" alt="img-a">
                         </div>
                         <div class="image-right col-6">
                             <!-- style="background-color: green;" -->
                             <img src="./assets/img/c1.jpg" alt="img-c1">
-                            <img src="./assets/img//c4.jpg" alt="img-c4">
-
-                            <img src="./img/a.jpg" alt="img-a">
-                        </div>
-                        <div class="image-right col-6">
-                            <!-- style="background-color: green;" -->
-                            <img src="./img/c1.jpg" alt="img-c1">
-                            <img src="./img//c4.jpg" alt="img-c4">
-
+                            <img src="./assets/img/c4.jpg" alt="img-c4">
                         </div>
                     </div>
                 </div>
@@ -255,11 +247,9 @@
     <!-- PHẦN VỸ TÂN LÀM -->
 
     <section class="features py-5">
-
         <div class="container py-lg-5 py-md-4 py-2">
             <div class="row align-items-center">
                 <div class="col-lg-6 pr-lg-5">
-
                     <h5 class="sub-title">EVERY DAY BRINGS NEW CHALLENGES</h5>
                     <h3 class="main-title">Creative agency focused on vision, product and people</h3>
                     <p class="text">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia
@@ -269,9 +259,7 @@
                     </p>
                     <a href="#" class="btn btn-primary btn_style mt-lg-5 mt-4">Discover More</a>
                 </div>
-
                 <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
-
                     <div class="features_list">
                         <div class="features_item ">
                             <div class=" icon">
@@ -281,25 +269,19 @@
                         </div>
                         <div class="features_item">
                             <div class=" icon">
-
                                 <img src="./assets/img/icon2.png" alt="" class="img-fluid">
-
                             </div>
                             <h4><a href="#">Our Process</a></h4>
                         </div>
                         <div class="features_item">
                             <div class=" icon">
-
                                 <img src="./assets/img/icon3.png" alt="" class="img-fluid">
-
                             </div>
                             <h4><a href="#">Our Process</a></h4>
                         </div>
                         <div class="features_item">
                             <div class=" icon">
-
                                 <img src="./assets/img/icon4.png" alt="" class="img-fluid">
-
                             </div>
                             <h4><a href="#">Our Process</a></h4>
                         </div>
@@ -311,12 +293,10 @@
 
 
     <section class="service py-5">
-
         <div class="container py-lg-5 py-md-4 py-2">
             <h3 class="main-title text-center">Always
                 there for your care, our Services</h3>
             <div class="row mt-lg-5 mt-4 text-center justify-content-center">
-
                 <div class="col-lg-4 col-md-6">
                     <div class="service_item">
                         <a href="#service" class="d-block zoom"><img src="./assets/img/s1.jpg" alt=""
@@ -370,21 +350,16 @@
     </section>
 
     <!-- chưa sử dụng dc thư viện -->
-
     <section class="galery py-5">
         <div class="container py-lg-5 py-md-4 py-2">
-
             <div class=" text-center mb-5">
                 <h3 class="sub-title"> Our Gallery</h3>
                 <h3 class=" main-title mx-lg-5">Successful projects we've done</h3>
             </div>
-
             <!-- OUR GALLERY -->
-
             <div class="row">
                 <div class="galery_item col-lg-4 col-md-6">
-                    <a href="./assets/img/c1.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c1.jpg" class="zoom d-block" data-title="Project 1" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c1.jpg" alt="">
                         <div class="galery_overlay">
                             <div class="galery_text">
@@ -396,13 +371,12 @@
                     </a>
                 </div>
                 <div class="galery_item col-lg-4 col-md-6 mt-md-0 mt-4">
-                    <a href="./assets/img/c2.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c2.jpg" class="zoom d-block" data-title="Project 2" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c2.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 2</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -410,13 +384,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-lg-0 mt-4">
-                    <a href="./assets/img/c3.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c3.jpg" class="zoom d-block" data-title="Project 3" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c3.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 3</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -424,13 +397,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c4.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c4.jpg" class="zoom d-block" data-title="Project 4" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c4.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 4</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -438,13 +410,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c5.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c5.jpg" class="zoom d-block" data-title="Project 5" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c5.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 5</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -452,13 +423,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c6.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c6.jpg" class="zoom d-block" data-title="Project 6" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c6.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 6</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -466,9 +436,7 @@
                 </div>
 
             </div>
-
             <!-- Company logos -->
-
             <div class=" company_logos row pt-5 mt-5 justify-content-center">
                 <div class="col-lg-2 col-md-3 col-4">
                     <img src="./assets/img/brand1.png" alt="" class="img-fluid">
@@ -491,9 +459,7 @@
 
     <section id="progress">
         <div class="midd-w3 py-5">
-
             <div class="container py-lg-5 py-md-4 py-2">
-
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/about.jpg"
@@ -736,14 +702,7 @@
     </section>
 
 
-    <!-- fancybox tạo album trong service_item   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script>
-        $('[data-fancybox="gallery"]').fancybox({
-            // Options will go here
-            loop: true,
-        });
-    </script>
+    
 
 
     <!-- /* PHẦN FOOTER */ -->
@@ -803,7 +762,7 @@
     <!-- Phần Copyright -->
     <div class="copyright">
         <div class="container">
-            <p>© 2021 Corp Vision. All rights reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+            <p>© 2021 Corp Vision. All Rights Reserved | WordPress Theme by <a href="https://w3layouts.com/">W3Layouts</a></p>
         </div>
     </div>
     <!-- Nút Back to Top -->
@@ -822,6 +781,36 @@
 
 
     <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+    
+
+
+    <!-- fancybox tạo album trong service_item   -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: false,
+            Toolbar: false,
+            helpers: {
+                title: {
+                    type: 'inside',
+                    position: 'bottom'
+                }
+            },
+            Image: {
+                zoom: false,
+                click: false,
+                // wheel: "slide",
+            },
+        });
+    </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+
+    <!-- Fancybox 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+            //  JavaScript will go here
+    </script> -->
 
 
     <!-- JAVASCRIPT FROM DUY -->
@@ -916,8 +905,11 @@
             window.location.hash = hash;
         });
     </script>
-    <!-- END JAVASCRIPT FROM TONG -->
 
+    <!-- lightbox để làm phần OUR GALLERY  -->
+    <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- END JAVASCRIPT FROM TONG -->
 
 
 </body>
