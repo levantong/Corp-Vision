@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="./assets/css/back-to-top-style.css">
 
 
-    <!-- fancybox  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./assets/css/lightbox.css"/>
+
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="./assets/css/style1.css"> -->
     <!-- CSS chính, tất cả link CSS khác để trên này -->
@@ -359,8 +359,7 @@
             <!-- OUR GALLERY -->
             <div class="row">
                 <div class="galery_item col-lg-4 col-md-6">
-                    <a href="./assets/img/c1.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c1.jpg" class="zoom d-block" data-title="Project 1" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c1.jpg" alt="">
                         <div class="galery_overlay">
                             <div class="galery_text">
@@ -372,13 +371,12 @@
                     </a>
                 </div>
                 <div class="galery_item col-lg-4 col-md-6 mt-md-0 mt-4">
-                    <a href="./assets/img/c2.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c2.jpg" class="zoom d-block" data-title="Project 2" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c2.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 2</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -386,13 +384,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-lg-0 mt-4">
-                    <a href="./assets/img/c3.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c3.jpg" class="zoom d-block" data-title="Project 3" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c3.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 3</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -400,13 +397,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c4.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c4.jpg" class="zoom d-block" data-title="Project 4" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c4.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 4</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -414,13 +410,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c5.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c5.jpg" class="zoom d-block" data-title="Project 5" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c5.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 5</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -428,13 +423,12 @@
                 </div>
 
                 <div class="galery_item col-lg-4 col-md-6 item mt-4 pt-lg-2">
-                    <a href="./assets/img/c6.jpg" class="zoom d-block" data-fancybox="gallery"
-                        data-caption="Caption for single image">
+                    <a href="./assets/img/c6.jpg" class="zoom d-block" data-title="Project 6" data-lightbox="roadtrip">
                         <img class="card-img-bottom d-block" src="./assets/img/c6.jpg" alt="">
 
                         <div class="galery_overlay">
                             <div class="galery_text">
-                                <h4 class="title">Project 1</h4>
+                                <h4 class="title">Project 6</h4>
                                 <p class="content">Quisque ut lectus, eros et, sed commodo risus.</p>
                             </div>
                         </div>
@@ -708,14 +702,7 @@
     </section>
 
 
-    <!-- fancybox tạo album trong service_item   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script>
-        $('[data-fancybox="gallery"]').fancybox({
-            // Options will go here
-            loop: true,
-        });
-    </script>
+    
 
 
     <!-- /* PHẦN FOOTER */ -->
@@ -775,7 +762,7 @@
     <!-- Phần Copyright -->
     <div class="copyright">
         <div class="container">
-            <p>© 2021 Corp Vision. All rights reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+            <p>© 2021 Corp Vision. All Rights Reserved | WordPress Theme by <a href="https://w3layouts.com/">W3Layouts</a></p>
         </div>
     </div>
     <!-- Nút Back to Top -->
@@ -794,6 +781,36 @@
 
 
     <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+    
+
+
+    <!-- fancybox tạo album trong service_item   -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: false,
+            Toolbar: false,
+            helpers: {
+                title: {
+                    type: 'inside',
+                    position: 'bottom'
+                }
+            },
+            Image: {
+                zoom: false,
+                click: false,
+                // wheel: "slide",
+            },
+        });
+    </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+
+    <!-- Fancybox 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+            //  JavaScript will go here
+    </script> -->
 
 
     <!-- JAVASCRIPT FROM DUY -->
@@ -888,8 +905,11 @@
             window.location.hash = hash;
         });
     </script>
-    <!-- END JAVASCRIPT FROM TONG -->
 
+    <!-- lightbox để làm phần OUR GALLERY  -->
+    <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- END JAVASCRIPT FROM TONG -->
 
 
 </body>
