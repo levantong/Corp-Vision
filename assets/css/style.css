@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Author: Duy */
+
 body a, button, .btn {
     cursor: pointer !important;
 }
@@ -976,12 +977,29 @@ header .navbar-dark .navbar-toggler {
 }
 
 @media screen and (max-width: 415px) {
+    /* HEADER */
+    header .corpBtn-Search .search-input input {
+        right: -125px;
+    }
+    /* BANNER */
     .corpBanner .slide-item .item-content h1 {
         font-size: 32px;
     }
 }
 
+@media screen and (max-width: 375px) {
+    /* HEADER */
+    header .corpBtn-Search .search-input input {
+        font-size: 35px;
+    }
+    body.search-active .corpBtn-Search .btn-close {
+        font-size: 35px;
+    }
+}
+
+
 /* ================  CSS của Tân ====================*/
+
 
 /* Feature  */
 
@@ -1822,4 +1840,4 @@ footer li a:hover {
         padding: 48px 0px;
     }
     /* hết Phần landscape phones */
-}
+
