@@ -1,9 +1,31 @@
 # Bài tập nhóm 7 - Corp Vision
+
 Dear mọi người, như thống nhất nhóm 7 chọn đề bài clone trang Corp Vision theo địa chỉ bên dưới:
-https://demo.w3layouts.com/demos_new/template_demo/01-04-2021/corpvision-liberty-demo_Free/1954827273/web/index.html?_ga=2.162940031.294405999.1632622921-1478088941.1629376450
+
+https://wp.w3layouts.com/corpvision/
+
 >**Thời gian bắt đầu: 01-10, hạn chót hoàn thành: 12-10. Nộp bài: 15-10**
 
 Mọi người đăng ký tài khoản Trello, Join vào bảng này: https://trello.com/invite/b/HYLd3zo6/11909b3dcc1eee70834f08f7635a0889/bootcam-20-b%C3%A0i-t%E1%BA%ADp-nh%C3%B3m-7, kiểm tra và hoàn thành các task trên Trello theo đúng tiến độ dự án nha.
+
+Cập nhật thông tin thành viên kèm sdt mọi người để tiện liên hệ nhau:
+
+👤 Lê Văn Tòng - 📲 0909193235 - 📧 vantong112.vpb@gmail.com
+
+👤 Lê Thanh Duy - 📲 0814551628 - 📧 lethanhduy9620@gmail.com
+
+👤 Hứa Tân Vĩ - 📲 0971010734 - 📧 huuatanvi@gmail.com
+
+**Update 15/10 - PHẦN REPONSIVE:**
+
+Bài đã hoàn thành, anh em check lại tại 👉: https://levantong.github.io/Corp-Vision/#
+Nếu không có thay đổi gì khác sẽ nộp bài vào 21h:00 ngày 15/10
+
+**Update 14/10 - PHẦN REPONSIVE:**
+
+Web đề bài nó không dùng Fancybox mà dùng LIGHTBOX by Lokesh Dhakar, cập nhật để làm giống đề nhất.
+
+Mọi người tham khảo ở đây 👉: https://lokeshdhakar.com/projects/lightbox2/
 
 
 **Update 13/10 - PHẦN REPONSIVE:**
@@ -98,6 +120,9 @@ _Hạn chót 15/10_
     --secondary-color: #213364;
     --font-color: #666;
     --heading-color: #3f3a64;
+    
+    ....
+    được khai báo trong CSS line root{...}, mọi người dùng lại các biến này nha để có thể đổi màu khi chuyển Dark Mode, **chú ý không set màu cứng **
     
 ###### Bố cục:
 Mỗi phần nếu có canh giữa sẽ bọc trong 1 class chung là .container.
